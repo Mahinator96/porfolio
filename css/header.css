@@ -11,7 +11,7 @@
   height: 34px;
 }
 .header__contacts {
-  /* display: none; */
+  display: none;
   position: absolute;
   background-color: #A1B7C8;
   top: 61px;
@@ -77,14 +77,3 @@
     width: 100%;
     height: auto;
   }
-
-
-
-.present__photo {
-  max-width: 450px;
-  width: 100%;
-  /* height: auto; */
-  /* width: 450px; */
-  height: 670px;
-  background-color: #eee;
-}
