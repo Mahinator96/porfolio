@@ -1,8 +1,11 @@
 @import 'fonts.css';
 @import 'reset.css';
+@import 'swiper-bundle.min.css';
 @import 'header.css';
 @import 'present.css';
 @import 'adventage.css';
+@import 'porfolio.css';
+@import 'modal.css';
 
 
 @import 'media.css';
@@ -14,3 +17,22 @@ body {
   color: #110303;
   background-color: #ffffff;
 }
+.page.block {
+  overflow-y: hidden;
+}
+
+.page__overlay{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  overflow: auto;
+  padding: 15px;
+  display: flex;
+  z-index: 5;
+}
+.page__overlay_modal {
+  display: none;
+} 

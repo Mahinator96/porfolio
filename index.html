@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link type="image/vnd.microsoft.icon" href="img/svg/favicon.svg" rel="icon">
   <link rel="stylesheet" href="css/style.css">
   <title>Евгений Васильев</title>
 </head>
@@ -93,12 +94,12 @@
       <div class="container">
         <h2 class=" portfolio__title">Портфолио</h2>
 
-        <div class="portfolio__slider">
-          <ul class="portfolio__list">
-            <li class="portfolio__item">
+        <div class="swiper portfolio__slider">
+          <ul class="swiper-wrapper portfolio__list">
+            <li class="swiper-slide portfolio__item">
               <article class="card">
-                <a href="img/portfolio/go_serf.jpg">
-                  <img class="card__picture" src="img/portfolio/go_serf-mini.jpg" alt="Курорт Go-serf">
+                <a class="card__picture" href="https://mahinator96.github.io/supboard/" target="_blank">
+                  <img src="img/portfolio/go_serf-mini.jpg" alt="Курорт Go-serf">
                 </a>
 
                 <p class="card__data">
@@ -110,14 +111,14 @@
               </article>
             </li>
 
-            <li class="portfolio__item">
+            <li class="swiper-slide portfolio__item">
               <article class="card">
-                <a href="img/portfolio/lamborgini.jpg">
-                  <img class="card__picture" src="img/portfolio/lamborgini-mini.jpg" alt="Проведение гонок Lamborgini">
+                <a class="card__picture" href="https://mahinator96.github.io/lamborgini/" target="_blank">
+                  <img src="img/portfolio/lamborgini-mini.jpg" alt="Проведение гонок Lamborgini">
                 </a>
 
                 <p class="card__data">
-                  <span>Проведение гонок "Lamborgini"</span>
+                  <span class="card__client">Гонки "Lamborgini"</span>
                   <time class="card__date" datetime="2022">год: 2022</time>
                 </p>
 
@@ -125,14 +126,14 @@
               </article>
             </li>
 
-            <li class="portfolio__item">
+            <li class="swiper-slide portfolio__item">
               <article class="card">
-                <a href="img/portfolio/sup_bord.jpg">
-                  <img class="card__picture" src="img/portfolio/sup_bord-mini.jpg" alt="">
+                <a class="card__picture" href="https://mahinator96.github.io/sup/" target="_blank">
+                  <img src="img/portfolio/sup_bord-mini.jpg" alt="">
                 </a>
 
                 <p class="card__data">
-                  <span></span>
+                  <span>Магазин "Sup"</span>
                   <time class="card__date" datetime="2022">год: 2022</time>
                 </p>
 
@@ -141,13 +142,74 @@
             </li>
 
           </ul>
+
+          <button class="portfolio__arrow portfolio__arrow_left"></button>
+          <button class="portfolio__arrow portfolio__arrow_right"></button>
         </div>
       </div>
     </section>
   </main>
 
+  <div class="page__overlay page__overlay_modal">
+    <div class="modal">
+      <h2 class="modal__title">Заполните форму и я свяжусь&nbsp;с&nbsp;вами</h2>
+
+      <form class="modal__form callback">
+        <fieldset class="callback__group">
+          <legend class="visually-hidden"></legend>
+          <label class="callback__label">
+            <span class="callback__label-text">ФИО</span>
+            <input class="callback__input" type="text" name="bio" placeholder="Введите ваше ФИО">
+          </label>
+          <label class="callback__label">
+            <span class="callback__label-text">Телефон</span>
+            <input class="callback__input" type="text" name="phone" placeholder="Введите ваш номер телефона">
+          </label>
+        </fieldset>
+
+        <fieldset class="callback__group connect">
+          <legend class="connect__title">Где удобнее связаться?</legend>
+
+          <label class="connect__label">
+            <input class="connect__radio" type="radio" name="connect" value="telegram" checked>
+            <span class="connect__text">Telegram</span>
+          </label>
+
+          <label class="connect__label">
+            <input class="connect__radio" type="radio" name="connect" value="whatsup">
+            <span class="connect__text">Whatsup</span>
+          </label>
+
+          
+          <label class="connect__label">
+            <input class="connect__radio" type="radio" name="connect" value="Viber">
+            <span class="connect__text">Viber</span>
+          </label>
+
+          <label class="connect__label">
+            <input class="connect__radio" type="radio" name="connect" value="call">
+            <span class="connect__text">Позвонить</span>
+          </label>
+        </fieldset>
+
+        <button type="submit" class="callback__button">Заказать</button>
+      </form>
+
+      <button class="modal__close">
+        <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="29.1681" height="1.94454" rx="0.972271" transform="matrix(0.707106 -0.707107 0.707106 0.707107 0 20.625)" fill="#282626"/>
+          <rect width="29.1681" height="1.94454" rx="0.972271" transform="matrix(0.707106 0.707107 -0.707106 0.707107 1.375 0)" fill="#282626"/>
+        </svg>          
+      </button>
+    </div>
+  </div>
+
   <footer>
 
   </footer>
+
+  <script defer src="js/jquery.js"></script>
+  <script defer src="js/swiper-bundle.min.js"></script>
+  <script defer src="js/index.js"></script>
 </body>
 </html>

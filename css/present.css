@@ -40,4 +40,12 @@
   background-color: #E87C40;
   border-radius: 4px;
   color: #fff;
+  text-transform: uppercase;
+  transition:  0.3s;
+}
+.present__order-btn:hover {
+  background-color: #d85c1b;
+  -webkit-box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.43);
+  -moz-box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.43);
+  box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.43);
 }

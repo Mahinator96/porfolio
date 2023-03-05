@@ -1,0 +1,72 @@
+.card{
+  max-width: 252px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 14px;
+}
+.card__data{
+  display: flex;
+  justify-content: space-between;
+  font-weight: 600;
+  font-size: 14px;
+}
+.card__client {
+  line-height: 120%;
+}
+.card__date{
+  line-height: 140%;
+}
+.card__picture{
+  width: 155px;
+  height: 92px;
+  background-image: url('../img/svg/macbook.svg');
+  background-size: cover;
+  padding: 7px 21px 15px;;
+  align-self: center;
+  margin-bottom: 30px;
+  transition: 0.5s;
+}
+.card__picture:hover{
+  scale: 1.08;
+}
+.card__picture img {
+  width: 100%;
+  height: 100%;
+}
+.portfolio__slider{
+  position: relative;
+  max-width: 100%;
+  margin: 0 auto;
+}
+.portfolio__title{
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 120%;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+.portfolio__arrow {
+  position: absolute;
+  display: block;
+  width: 26px;
+  height: 26px;
+  background-image: url('../img/svg/arrow.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+}
+.portfolio__arrow_disabled {
+  opacity: 0.3;
+  pointer-events: none;
+}
+.portfolio__arrow_left {
+  left: 0;
+}
+.portfolio__arrow_right {
+  right: 0;
+  transform: rotate(180deg);
+}
