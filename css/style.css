@@ -35,4 +35,7 @@ body {
 }
 .page__overlay_modal {
   display: none;
-} 
+}
+.page__overlay_modal.page__overlay_modal_open {
+  display: block;
+}
